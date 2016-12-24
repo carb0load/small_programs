@@ -23,7 +23,7 @@ def main():
     parsed_times = csv_reader(csv_file)
     csv_writer(parsed_times)
     us_central = timezone('US/Central')
-    fmt = "%H:%M:%S"
+    fmt = "%H:%M:%S %Z%z"
 
     # print(common_timezones)  # list the common time zones
 
