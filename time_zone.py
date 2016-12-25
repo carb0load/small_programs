@@ -14,6 +14,7 @@ def format_time_zones(hour, minute):
     raw_year = 1900  # place holder year use %Y-%m-%d if date needs to added
     raw_mon = 1  # place holder month
     raw_day = 1  # place holder day
+    print('Format check: ', hour, minute)
     utcmoment_unaware = datetime(raw_year, raw_mon, raw_day, hour, minute)
     utcmoment = utcmoment_unaware.replace(tzinfo=pytz.utc)
 
