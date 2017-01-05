@@ -17,6 +17,7 @@ def main():
 
     for tz in timezones:
         localDatetime = utcmoment.astimezone(pytz.timezone(tz))
+        print("Local DateTime: ",localDatetime)
         print(tz, '-', localDatetime.strftime(localFormat))
 
 
